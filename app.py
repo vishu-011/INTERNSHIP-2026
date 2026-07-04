@@ -10,13 +10,14 @@ def main():
         """
         <style>
         :root {
-            --bg-start: #07111f;
-            --bg-end: #1d4ed8;
-            --accent: #ff7a00;
-            --accent-2: #ff4d6d;
-            --panel: rgba(255, 255, 255, 0.12);
-            --panel-strong: rgba(255, 255, 255, 0.18);
-            --text: #f8fafc;
+            --bg-start: #0a0e27;
+            --bg-end: #1e3a8a;
+            --accent: #ff6b35;
+            --accent-2: #ff006e;
+            --accent-3: #00d9ff;
+            --panel: rgba(255, 255, 255, 0.15);
+            --panel-strong: rgba(255, 255, 255, 0.22);
+            --text: #ffffff;
         }
 
         .stApp {
@@ -31,21 +32,25 @@ def main():
         .hero-card {
             padding: 1.35rem 1.5rem;
             border-radius: 24px;
-            background: linear-gradient(135deg, rgba(255,255,255,0.18), rgba(255,255,255,0.08));
-            border: 1px solid rgba(255,255,255,0.18);
+            background: linear-gradient(135deg, rgba(0,217,255,0.2), rgba(255,0,110,0.15));
+            border: 2px solid rgba(0,217,255,0.4);
             backdrop-filter: blur(10px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+            box-shadow: 0 10px 30px rgba(0,217,255,0.2);
             margin-bottom: 1rem;
         }
 
         .hero-card h1 {
-            color: var(--text);
+            color: #ffffff;
             font-size: 2rem;
             margin-bottom: 0.25rem;
+            background: linear-gradient(135deg, #00d9ff, #ff006e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .hero-card p {
-            color: #e2e8f0;
+            color: #e0f7ff;
             font-size: 1rem;
             margin-bottom: 0;
         }
@@ -53,55 +58,68 @@ def main():
         .info-card {
             padding: 1rem 1.1rem;
             border-radius: 18px;
-            background: var(--panel);
-            border: 1px solid rgba(255,255,255,0.14);
+            background: linear-gradient(135deg, rgba(0,217,255,0.08), rgba(255,107,53,0.08));
+            border: 1.5px solid rgba(255,107,53,0.3);
             margin-top: 0.5rem;
         }
 
         .info-card strong {
-            color: #fff;
+            color: #00d9ff;
         }
 
         .stTextInput > div > div > input,
         .stNumberInput > div > div > input,
         .stSelectbox > div > div {
             border-radius: 12px;
-            border: 1px solid rgba(255,255,255,0.2);
-            background: rgba(255,255,255,0.95);
-            color: #0f172a;
+            border: 2px solid rgba(0,217,255,0.5) !important;
+            background: rgba(10, 14, 39, 0.8) !important;
+            color: #ffffff !important;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 20px rgba(0,217,255,0.2);
+        }
+        
+        .stTextInput > div > div > input:focus,
+        .stNumberInput > div > div > input:focus,
+        .stSelectbox > div > div:focus {
+            border: 2px solid rgba(255,107,53,0.8) !important;
+            box-shadow: 0 0 30px rgba(255,107,53,0.4) !important;
         }
 
         .stButton > button {
-            background: linear-gradient(135deg, var(--accent), var(--accent-2));
+            background: linear-gradient(135deg, #ff6b35, #ff006e);
             color: white;
             border: 0;
             border-radius: 999px;
             padding: 0.65rem 1.4rem;
             font-weight: 700;
-            box-shadow: 0 8px 24px rgba(255,77,109,0.25);
+            box-shadow: 0 8px 24px rgba(255,107,53,0.4);
         }
 
         .stButton > button:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 10px 28px rgba(255,77,109,0.35);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(255,107,53,0.5);
         }
 
         .result-card {
             padding: 1.2rem 1.25rem;
             border-radius: 18px;
-            background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.1));
-            border: 1px solid rgba(255,255,255,0.22);
+            background: linear-gradient(135deg, rgba(0,217,255,0.15), rgba(255,107,53,0.15));
+            border: 2px solid rgba(0,217,255,0.5);
             margin-top: 0.75rem;
             text-align: center;
         }
 
         .result-card h3 {
-            color: white;
+            color: #00d9ff;
             margin-bottom: 0.3rem;
+            font-size: 0.95rem;
         }
 
         .result-card p {
-            color: #fef3c7;
+            background: linear-gradient(135deg, #00d9ff, #ff6b35);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             font-size: 1.6rem;
             font-weight: 700;
             margin-bottom: 0;
