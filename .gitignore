@@ -1,0 +1,21 @@
+# Python virtual environment
+srm/
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Streamlit / local env
+.streamlit/secrets.toml
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
