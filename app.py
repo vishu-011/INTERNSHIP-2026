@@ -4,7 +4,7 @@ from hpp import predict_rent
 
 
 def main():
-    st.set_page_config(page_title="House Rent Predictor", page_icon="🏠", layout="centered")
+    st.set_page_config(page_title="House Rent Predictor", page_icon="🏘️", layout="centered")
 
     st.markdown(
         """
@@ -15,9 +15,6 @@ def main():
             --accent: #ff6b35;
             --accent-2: #ff006e;
             --accent-3: #00d9ff;
-            --panel: rgba(255, 255, 255, 0.15);
-            --panel-strong: rgba(255, 255, 255, 0.22);
-            --text: #ffffff;
         }
 
         .stApp {
@@ -77,7 +74,7 @@ def main():
             backdrop-filter: blur(10px);
             box-shadow: 0 0 20px rgba(0,217,255,0.2);
         }
-        
+
         .stTextInput > div > div > input:focus,
         .stNumberInput > div > div > input:focus,
         .stSelectbox > div > div:focus {
@@ -133,7 +130,7 @@ def main():
         """
         <div class="hero-card">
             <h1>🏠 House Rent Predictor</h1>
-            <p>Estimate your monthly rent in seconds with a clean, fast, and modern experience.</p>
+            <p>Estimate your monthly rent in seconds with a clean and modern experience.</p>
         </div>
         """,
         unsafe_allow_html=True,
